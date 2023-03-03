@@ -5,6 +5,10 @@ function(input, output) {
     hist(faithful$eruptions,
       probability = TRUE,
       breaks = as.numeric(input$n_breaks),
+      
+      #server code for changing bar colour
+      #col = as.character(input$bar_col),
+      
       xlab = "Duration (minutes)",
       main = "Geyser eruption duration")
 

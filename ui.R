@@ -12,7 +12,19 @@ bootstrapPage(
   checkboxInput(inputId = "density",
       label = strong("Show density estimate"),
       value = FALSE),
+  
+  
+  
+  
+  #ui code for changing bar colour
+  
+  # selectInput(inputId = "bar_col",
+  #             label = "Select bar colour",
+  #             choices = c("blue", "red", "green", "gray"),
+  #             selected = "gray"),
 
+  
+  
   plotOutput(outputId = "main_plot", height = "300px"),
 
   # Display this only if the density is shown
